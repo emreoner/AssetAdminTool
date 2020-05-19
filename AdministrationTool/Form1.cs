@@ -242,19 +242,20 @@ namespace AdministrationTool
 
 
 
-            var assetlistOrdered = _assetList.OrderBy(x => x.Name).Where(x => x.Name == "ISIM ASSETS").ToList();
-            var parentAssetDto = assetlistOrdered.FirstOrDefault();
+            var assetlistOrdered = _assetList.OrderBy(x => x.Name).ToList();
+            //var parentAssetDto = assetlistOrdered.FirstOrDefault();
 
-            parentTreeItem = new UnifiedAssetTreeItem { AssetDto = parentAssetDto, Text = parentAssetDto.Name, Name = parentAssetDto.Name, Tag = parentAssetDto.Id };
+            //parentTreeItem = new UnifiedAssetTreeItem { AssetDto = parentAssetDto, Text = parentAssetDto.Name, Name = parentAssetDto.Name, Tag = parentAssetDto.Id };
+            parentTreeItem = new UnifiedAssetTreeItem {   Text = "Assets", Name = "Assets", Tag = 0 };
 
-
+            RtvCameras.Nodes.Add(parentTreeItem);
 
             foreach (var assetDto in assetlistOrdered)
             {
                 if (!assetDto.IsActive)
                     continue;
 
-                if (RtvCameras.Nodes.Any(x => ((UnifiedAssetTreeItem)(x)).AssetDto.Id == assetDto.Id))
+                if (RtvCameras.Nodes.Any(x => ((UnifiedAssetTreeItem)(x)).AssetDto?.Id == assetDto.Id))
                     continue;
 
                 if (assetDto.AssetType == AssetType.AssetGroup && (assetDto.ChildAssetDtos == null || assetDto.ChildAssetDtos.Count == 0))
@@ -268,16 +269,16 @@ namespace AdministrationTool
                 //    continue;
 
                 // Generate asset tree item - ROOT
-                Image img = null;
-                UnifiedAssetTreeItem UATreeItem = new UnifiedAssetTreeItem { AssetDto = assetDto, Text = assetDto.Name, Name = assetDto.Name, Tag = assetDto.Id };
-                parentTreeItem = UATreeItem;
+                //Image img = null;
+                //UnifiedAssetTreeItem UATreeItem = new UnifiedAssetTreeItem { AssetDto = assetDto, Text = assetDto.Name, Name = assetDto.Name, Tag = assetDto.Id };
+                //parentTreeItem = UATreeItem;
                 //if (assetImages.TryGetValue(assetDto.AssetType, out img))
                 //{
                 //    UATreeItem.Image = img;
                 //}
                 // Add
 
-                RtvCameras.Nodes.Add(parentTreeItem);
+               
 
                 // Recursively add child nodes
                 if (assetDto.AssetType == AssetType.AssetGroup)
@@ -357,6 +358,7 @@ namespace AdministrationTool
                 {
                     if (childAssetDto.AssetType == AssetType.Camera)
                         parentTreeItem.Nodes.Add(UATreeItem);
+                    Debug.WriteLine(UATreeItem.Text);
                 }
 
                 // Recursively add child nodes
