@@ -1,0 +1,3317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iSIM.Core.Common</name>
+    </assembly>
+    <members>
+        <member name="T:iSIM.Core.Common.Attribute.NotNullAttribute">
+            <summary>
+            NotNullAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.CanBeNullAttribute">
+            <summary>
+            CanBeNullAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.InvokerParameterNameAttribute">
+            <summary>
+            InvokerParameterNameAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.NoEnumerationAttribute">
+            <summary>
+            NoEnumerationAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.ContractAnnotationAttribute">
+            <summary>
+            ContractAnnotationAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.ContractAnnotationAttribute.Contract">
+            <summary>
+            Gets the contract.
+            </summary>
+            <value>
+            The contract.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.ContractAnnotationAttribute.ForceFullStates">
+            <summary>
+            Gets a value indicating whether [force full states].
+            </summary>
+            <value>
+              <c>true</c> if [force full states]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.ContractAnnotationAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.ContractAnnotationAttribute"/> class.
+            </summary>
+            <param name="contract">The contract.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.ContractAnnotationAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.ContractAnnotationAttribute"/> class.
+            </summary>
+            <param name="contract">The contract.</param>
+            <param name="forceFullStates">if set to <c>true</c> [force full states].</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute">
+            <summary>
+            UsedImplicitlyAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.#ctor(iSIM.Core.Common.Attribute.ImplicitUseKindFlags)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute"/> class.
+            </summary>
+            <param name="useKindFlags">The use kind flags.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.#ctor(iSIM.Core.Common.Attribute.ImplicitUseTargetFlags)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute" /> class.
+            </summary>
+            <param name="targetFlags">The target flags.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.#ctor(iSIM.Core.Common.Attribute.ImplicitUseKindFlags,iSIM.Core.Common.Attribute.ImplicitUseTargetFlags)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute"/> class.
+            </summary>
+            <param name="useKindFlags">The use kind flags.</param>
+            <param name="targetFlags">The target flags.</param>
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.UseKindFlags">
+            <summary>
+            Gets the use kind flags.
+            </summary>
+            <value>
+            The use kind flags.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.UsedImplicitlyAttribute.TargetFlags">
+            <summary>
+            Gets the target flags.
+            </summary>
+            <value>
+            The target flags.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.StringFormatMethodAttribute">
+            <summary>
+            StringFormatMethodAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.StringFormatMethodAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.StringFormatMethodAttribute"/> class.
+            </summary>
+            <param name="formatParameterName">Name of the format parameter.</param>
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.StringFormatMethodAttribute.FormatParameterName">
+            <summary>
+            Gets the name of the format parameter.
+            </summary>
+            <value>
+            The name of the format parameter.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.ImplicitUseKindFlags">
+            <summary>
+            ImplicitUseKindFlags
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.ImplicitUseTargetFlags">
+            <summary>
+            ImplicitUseTargetFlags
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.ImagePathAttribute">
+            <summary>
+            ImagePathAttribute
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.ImagePathAttribute.ImagePath">
+            <summary>
+            Gets or sets the image path.
+            </summary>
+            <value>
+            The image path.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.ImagePathAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.ImagePathAttribute"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Attribute.EnumNameAttribute">
+            <summary>
+            NameAttribute
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Attribute.EnumNameAttribute.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Attribute.EnumNameAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Attribute.EnumNameAttribute"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Configuration.DictionaryBasedConfig">
+            <summary>
+            Used to set/get custom configuration.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Configuration.DictionaryBasedConfig.CustomSettings">
+            <summary>
+            Dictionary of custom configuration.
+            </summary>
+            <value>
+            The custom settings.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Item(System.String)">
+            <summary>
+            Gets/sets a config value.
+            Returns null if no config with given name.
+            </summary>
+            <value>
+            The <see cref="T:System.Object"/>.
+            </value>
+            <param name="name">Name of the config</param>
+            <returns>
+            Value of the config
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Get``1(System.String)">
+            <summary>
+            Gets a configuration value as a specific type.
+            </summary>
+            <typeparam name="T">Type of the config</typeparam>
+            <param name="name">Name of the config</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Set``1(System.String,``0)">
+            <summary>
+            Used to set a string named configuration.
+            If there is already a configuration with same <paramref name="name" />, it's overwritten.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="value">Value of the configuration</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Get(System.String)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <param name="name">Unique name of the configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Get(System.String,System.Object)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <param name="name">Unique name of the configuration</param>
+            <param name="defaultValue">Default value of the object if can not found given configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.Get``1(System.String,``0)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <typeparam name="T">Type of the object</typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="defaultValue">Default value of the object if can not found given configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Configuration.DictionaryBasedConfig.GetOrCreate``1(System.String,System.Func{``0})">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <typeparam name="T">Type of the object</typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="creator">The function that will be called to create if given configuration is not found</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.ContextName">
+            <summary>
+            The context name
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.IsimInternalCommunicationTokenId">
+            <summary>
+            The isim internal communication token identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.IsimCommunicationFakeTokenId">
+            <summary>
+            The isim communication fake token identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.IsimInternalPassword">
+            <summary>
+            The isim internal password
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.NameRegEx">
+            <summary>
+            The regex for name
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.UsernameRegEx">
+            <summary>
+            The regex for username
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.EmailRegEx">
+            <summary>
+            The regex for email
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.PhoneNumberRegEx">
+            <summary>
+            The regex for phone number
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.IpAddressRegEx">
+            <summary>
+            The regex for ip address
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.PortRegEx">
+            <summary>
+            The regex for port
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.QueryLimit">
+            <summary>
+            The query limit
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.SpacialQueryLimit">
+            <summary>
+            The spacial query limit
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.SuperUserId">
+            <summary>
+            The super user identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.SuperUserGroupId">
+            <summary>
+            The super user group identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.SuperRoleGroupId">
+            <summary>
+            The super role group identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.IsimConstant.AssetViewsRoleGroupId">
+            <summary>
+            The asset views role group identifier
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.Success">
+            <summary>
+            The success
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.UnknownError">
+            <summary>
+            The unknown error
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.IdMissMatch">
+            <summary>
+            The identifier miss match
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.LoginFailed">
+            <summary>
+            The login failed
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.SessionNotValid">
+            <summary>
+            The session not valid
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.Authorized">
+            <summary>
+            The authorized
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.Unauthorized">
+            <summary>
+            The unauthorized
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.NoSuchObject">
+            <summary>
+            The no such object
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.NotValid">
+            <summary>
+            The not valid
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.AlreadyAdded">
+            <summary>
+            The already added
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.SessionTimeout">
+            <summary>
+            The session timeout
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.InMemoryDatabaseError">
+            <summary>
+            The in memory database error
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.UnsupportedOperation">
+            <summary>
+            The unsupported operation
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.UsernameOrPasswordIsIncorrect">
+            <summary>
+            The username or password is incorrect
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.MissingFields">
+            <summary>
+            The missing field
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.UnknownClient">
+            <summary>
+            The unknown client
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.ThisObjectMustBeRequired">
+            <summary>
+            The this object must be required
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.ThisObjectCanNotBeCreated">
+            <summary>
+            The this object can not be created
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.ThisObjectCanNotBeDeleted">
+            <summary>
+            The this object can not be deleted
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Constant.MessageConstant.ThisObjectCanNotBeUpdated">
+            <summary>
+            The this object can not be updated
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Dependency.BasicConventionalRegistrar">
+            <summary>
+            This class is used to register basic dependency implementations such as <see cref="T:iSIM.Core.Common.Interface.Dependency.ITransientDependency"/> and <see cref="T:iSIM.Core.Common.Interface.Dependency.ISingletonDependency"/>.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.BasicConventionalRegistrar.RegisterAssembly(iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext)">
+            <summary>
+            Registers types of given assembly by convention.
+            </summary>
+            <param name="context">Registration context</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Dependency.ConventionalRegistrationConfig">
+            <summary>
+            This class is used to pass configuration/options while registering classes in conventional way.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.ConventionalRegistrationConfig.InstallInstallers">
+            <summary>
+            Install all <see cref="T:Castle.DynamicProxy.IInterceptor" /> implementations automatically or not.
+            Default: true.
+            </summary>
+            <value>
+              <c>true</c> if [install installers]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.ConventionalRegistrationConfig.#ctor">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Dependency.ConventionalRegistrationConfig" /> object.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Dependency.ConventionalRegistrationContext">
+            <summary>
+            This class is used to pass needed objects on conventional registration process.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.ConventionalRegistrationContext.Assembly">
+            <summary>
+            Gets the registering Assembly.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.ConventionalRegistrationContext.IocManager">
+            <summary>
+            Reference to the IOC Container to register types.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.ConventionalRegistrationContext.Config">
+            <summary>
+            Registration configuration.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.ConventionalRegistrationContext.#ctor(System.Reflection.Assembly,iSIM.Core.Common.Interface.Dependency.IIocManager,iSIM.Core.Common.Dependency.ConventionalRegistrationConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Dependency.ConventionalRegistrationContext"/> class.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <param name="iocManager">The ioc manager.</param>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Dependency.IocManager">
+            <summary>
+            This class is used to directly perform dependency injection tasks.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.IocManager.Instance">
+            <summary>
+            The Singleton instance.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.IocManager.IocContainer">
+            <summary>
+            Reference to the Castle Windsor Container.
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.IocManager._conventionalRegistrars">
+            <summary>
+            List of all registered conventional registrars.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.#cctor">
+            <summary>
+            Initializes the <see cref="T:iSIM.Core.Common.Dependency.IocManager"/> class.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.#ctor">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Dependency.IocManager" /> object.
+            Normally, you don't directly instantiate an <see cref="T:iSIM.Core.Common.Dependency.IocManager" />.
+            This may be useful for test purposes.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)">
+            <summary>
+            Adds a dependency registrar for conventional registration.
+            </summary>
+            <param name="registrar">dependency registrar</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.RegisterAssemblyByConvention(System.Reflection.Assembly)">
+            <summary>
+            Registers types of given assembly by all conventional registrars. See <see cref="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)" /> method.
+            </summary>
+            <param name="assembly">Assembly to register</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.RegisterAssemblyByConvention(System.Reflection.Assembly,iSIM.Core.Common.Dependency.ConventionalRegistrationConfig)">
+            <summary>
+            Registers types of given assembly by all conventional registrars. See <see cref="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)" /> method.
+            </summary>
+            <param name="assembly">Assembly to register</param>
+            <param name="config">Additional configuration</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Register``1(iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration.
+            </summary>
+            <typeparam name="TType">Type of the class</typeparam>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Register(System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration.
+            </summary>
+            <param name="type">Type of the class</param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Register``2(iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation.
+            </summary>
+            <typeparam name="TType">Registering type</typeparam>
+            <typeparam name="TImpl">The type that implements <see cref="!:TType" /></typeparam>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Register(System.Type,System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation.
+            </summary>
+            <param name="type">Type of the class</param>
+            <param name="impl">The type that implements <paramref name="type" /></param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.IsRegistered(System.Type)">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <param name="type">Type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.IsRegistered``1">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <typeparam name="TType">Type to check</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Resolve``1">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to get</typeparam>
+            <returns>
+            The instance object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Resolve``1(System.Type)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to cast</typeparam>
+            <param name="type">Type of the object to resolve</param>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Resolve``1(System.Object)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to get</typeparam>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            The instance object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Resolve(System.Type)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the object to get</param>
+            <returns>
+            The instance object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Resolve(System.Type,System.Object)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the object to get</param>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            The instance object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.ResolveAll``1">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the objects to resolve</typeparam>
+            <returns>
+            Object instances
+            </returns>
+            <inheritdoc />
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.ResolveAll``1(System.Object)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the objects to resolve</typeparam>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            Object instances
+            </returns>
+            <inheritdoc />
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.ResolveAll(System.Type)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the objects to resolve</param>
+            <returns>
+            Object instances
+            </returns>
+            <inheritdoc />
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.ResolveAll(System.Type,System.Object)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the objects to resolve</param>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            Object instances
+            </returns>
+            <inheritdoc />
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Release(System.Object)">
+            <summary>
+            Releases a pre-resolved object. See Resolve methods.
+            </summary>
+            <param name="obj">Object to be released</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <inheritdoc />
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocManager.ApplyLifestyle``1(Castle.MicroKernel.Registration.ComponentRegistration{``0},iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Applies the lifestyle.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="registration">The registration.</param>
+            <param name="lifeStyle">The life style.</param>
+            <returns></returns>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.IocScopedResolver._iocResolver">
+            <summary>
+            The ioc resolver
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.IocScopedResolver._resolvedObjects">
+            <summary>
+            The resolved objects
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.#ctor(iSIM.Core.Common.Interface.Dependency.IIocResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Dependency.IocScopedResolver"/> class.
+            </summary>
+            <param name="iocResolver">The ioc resolver.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Resolve``1">
+            <summary>
+            Resolves this instance.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Resolve``1(System.Type)">
+            <summary>
+            Resolves the specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Resolve``1(System.Object)">
+            <summary>
+            Resolves the specified arguments as anonymous type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="argumentsAsAnonymousType">Type of the arguments as anonymous.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Resolve(System.Type)">
+            <summary>
+            Resolves the specified type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Resolve(System.Type,System.Object)">
+            <summary>
+            Resolves the specified type.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="argumentsAsAnonymousType">Type of the arguments as anonymous.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.ResolveAll``1">
+            <summary>
+            Resolves all.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.ResolveAll``1(System.Object)">
+            <summary>
+            Resolves all.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="argumentsAsAnonymousType">Type of the arguments as anonymous.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.ResolveAll(System.Type)">
+            <summary>
+            Resolves all.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.ResolveAll(System.Type,System.Object)">
+            <summary>
+            Resolves all.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="argumentsAsAnonymousType">Type of the arguments as anonymous.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Release(System.Object)">
+            <summary>
+            Releases the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.IsRegistered(System.Type)">
+            <summary>
+            Determines whether the specified type is registered.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>
+              <c>true</c> if the specified type is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.IsRegistered``1">
+            <summary>
+            Determines whether this instance is registered.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>
+              <c>true</c> if this instance is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.IocScopedResolver.Dispose">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Dependency.SingletonDependency`1">
+            <summary>
+            Used to get a singleton of any class which can be resolved using <see cref="P:iSIM.Core.Common.Dependency.IocManager.Instance"/>.
+            Important: Use classes by injecting wherever possible. This class is for cases that's not possible.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:iSIM.Core.Common.Dependency.SingletonDependency`1.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.SingletonDependency`1.LazyInstance">
+            <summary>
+            The lazy instance
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.SingletonDependency`1.#cctor">
+            <summary>
+            Initializes the <see cref="T:iSIM.Core.Common.Dependency.SingletonDependency`1"/> class.
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.WindsorDependencyResolver._container">
+            <summary>
+            The container
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyResolver.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Dependency.WindsorDependencyResolver"/> class.
+            </summary>
+            <param name="container">The container.</param>
+            <exception cref="T:System.ArgumentNullException">container</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyResolver.GetService(System.Type)">
+            <summary>
+            Gets the service.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyResolver.GetServices(System.Type)">
+            <summary>
+            Gets the services.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyResolver.BeginScope">
+            <summary>
+            Starts a resolution scope.
+            </summary>
+            <returns>
+            The dependency scope.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyResolver.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.WindsorDependencyScope._container">
+            <summary>
+            The container
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Dependency.WindsorDependencyScope._scope">
+            <summary>
+            The scope
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyScope.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Dependency.WindsorDependencyScope"/> class.
+            </summary>
+            <param name="container">The container.</param>
+            <exception cref="T:System.ArgumentNullException">container</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyScope.GetService(System.Type)">
+            <summary>
+            Gets the service.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyScope.GetServices(System.Type)">
+            <summary>
+            Gets the services.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Dependency.WindsorDependencyScope.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.AssetLocationType">
+            <summary>
+            Asset Location Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.AssetType">
+            <summary>
+            Asset Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.BeingStatus">
+            <summary>
+            BeingStatus
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.Brand">
+            <summary>
+            Brand
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.BrandType">
+            <summary>
+            Brand Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.CameraType">
+            <summary>
+            Camera Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.ClientType">
+            <summary>
+            Client Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.DependencyLifeStyle">
+            <summary>
+            Lifestyles of types used in dependency injection system.
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Enum.DependencyLifeStyle.Singleton">
+            <summary>
+            Singleton object. Created a single object on first resolving
+            and same instance is used for subsequent resolves.
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Enum.DependencyLifeStyle.Transient">
+            <summary>
+            Transient object. Created one object for every resolving.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.EventType">
+            <summary>
+            Event Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.EventTypeCategory">
+            <summary>
+            Event Type Category
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.IncidentStatus">
+            <summary>
+            Incident Status
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.IncidentType">
+            <summary>
+            Incident Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.IncidentTypeCategory">
+            <summary>
+            Incident Type Category
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.LayerServiceType">
+            <summary>
+            Layer Service Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.LoginType">
+            <summary>
+            Login Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.LogType">
+            <summary>
+            Log Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.MimeType">
+            <summary>
+            Mime Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.OperationType">
+            <summary>
+            Operation Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.OperationTypeCategory">
+            <summary>
+            Operation Type Category
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.Priority">
+            <summary>
+            Priority
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.RelationType">
+            <summary>
+            Relation Type
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.ResolutionStatus">
+            <summary>
+            Resolution Status
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.Role">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.TrafficViolationStatus">
+            <summary>
+            Traffic Violation Status
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.TrafficViolationType">
+            <summary>
+            TrafficViolationType
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.UserShortcutType">
+            <summary>
+            UserShortcutType
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Enum.ResultStatusCode">
+            <summary>
+            Result Status Code
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.AttributeNotFoundException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Exception.AttributeNotFoundException"/> class.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.AttributeNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Exception.AttributeNotFoundException"/> class.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.AttributeNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Exception.AttributeNotFoundException"/> class.
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Exception.IsimAuthorizationException">
+            <summary>
+            This exception is thrown on an unauthorized request.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Exception.IsimException" />
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimAuthorizationException.#ctor">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimAuthorizationException" /> object.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimAuthorizationException.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimAuthorizationException" /> object.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimAuthorizationException.#ctor(iSIM.Core.Common.Model.IsimResult)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimAuthorizationException" /> object.
+            </summary>
+            <param name="result">iSIM Result</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimAuthorizationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimAuthorizationException" /> object.
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Exception.IsimException">
+            <summary>
+            Base exception type for those are thrown by Isim system for iSIM specific exceptions.
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="P:iSIM.Core.Common.Exception.IsimException.Result">
+            <summary>
+            Gets or sets the result.
+            </summary>
+            <value>
+            The result.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimException.#ctor">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimException" /> object.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimException.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimException" /> object.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimException.#ctor(iSIM.Core.Common.Model.IsimResult)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimException" /> object.
+            </summary>
+            <param name="result">iSIM Result</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Exception.IsimException" /> object.
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Exception.IsimInitializationException">
+            <summary>
+            This exception is thrown if a problem on Isim initialization progress.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Exception.IsimException" />
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimInitializationException.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimInitializationException.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Exception.IsimInitializationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Extension.CollectionExtensions">
+            <summary>
+            Extension methods for Collections.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.CollectionExtensions.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Checks whatever given collection object is null or has no item.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source">The source.</param>
+            <returns>
+              <c>true</c> if [is null or empty] [the specified source]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.CollectionExtensions.AddIfNotContains``1(System.Collections.Generic.ICollection{``0},``0)">
+            <summary>
+            Adds an item to the collection if it's not already in the collection.
+            </summary>
+            <typeparam name="T">Type of the items in the collection</typeparam>
+            <param name="source">Collection</param>
+            <param name="item">Item to check and add</param>
+            <returns>
+            Returns True if added, returns False if not.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Extension.DictionaryExtensions">
+            <summary>
+            Extension methods for Dictionary.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.DictionaryExtensions.TryGetValue``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,``0@)">
+            <summary>
+            This method is used to try to get a value in a dictionary if it does exists.
+            </summary>
+            <typeparam name="T">Type of the value</typeparam>
+            <param name="dictionary">The collection object</param>
+            <param name="key">Key</param>
+            <param name="value">Value of the key (or default value if key not exists)</param>
+            <returns>
+            True if key does exists in the dictionary
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.DictionaryExtensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+            <summary>
+            Gets a value from the dictionary with given key. Returns default value if can not find.
+            </summary>
+            <typeparam name="TKey">Type of the key</typeparam>
+            <typeparam name="TValue">Type of the value</typeparam>
+            <param name="dictionary">Dictionary to check and get</param>
+            <param name="key">Key to find the value</param>
+            <returns>
+            Value if found, default if can not found.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.DictionaryExtensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Gets a value from the dictionary with given key. Returns default value if can not find.
+            </summary>
+            <typeparam name="TKey">Type of the key</typeparam>
+            <typeparam name="TValue">Type of the value</typeparam>
+            <param name="dictionary">Dictionary to check and get</param>
+            <param name="key">Key to find the value</param>
+            <param name="factory">A factory method used to create the value if not found in the dictionary</param>
+            <returns>
+            Value if found, default if can not found.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.DictionaryExtensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1})">
+            <summary>
+            Gets a value from the dictionary with given key. Returns default value if can not find.
+            </summary>
+            <typeparam name="TKey">Type of the key</typeparam>
+            <typeparam name="TValue">Type of the value</typeparam>
+            <param name="dictionary">Dictionary to check and get</param>
+            <param name="key">Key to find the value</param>
+            <param name="factory">A factory method used to create the value if not found in the dictionary</param>
+            <returns>
+            Value if found, default if can not found.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Extension.IocRegistrarExtensions">
+            <summary>
+            Extension methods for <see cref="T:iSIM.Core.Common.Interface.Dependency.IIocRegistrar" /> interface.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.IocRegistrarExtensions.RegisterIfNot``1(iSIM.Core.Common.Interface.Dependency.IIocRegistrar,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration if it's not registered before.
+            </summary>
+            <typeparam name="T">Type of the class</typeparam>
+            <param name="iocRegistrar">Registrar</param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+            <returns>
+            True, if registered for given implementation.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.IocRegistrarExtensions.RegisterIfNot(iSIM.Core.Common.Interface.Dependency.IIocRegistrar,System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration if it's not registered before.
+            </summary>
+            <param name="iocRegistrar">Registrar</param>
+            <param name="type">Type of the class</param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+            <returns>
+            True, if registered for given implementation.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.IocRegistrarExtensions.RegisterIfNot``2(iSIM.Core.Common.Interface.Dependency.IIocRegistrar,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation if it's not registered before.
+            </summary>
+            <typeparam name="TType">Registering type</typeparam>
+            <typeparam name="TImpl">The type that implements <see cref="!:TType" /></typeparam>
+            <param name="iocRegistrar">Registrar</param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+            <returns>
+            True, if registered for given implementation.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.IocRegistrarExtensions.RegisterIfNot(iSIM.Core.Common.Interface.Dependency.IIocRegistrar,System.Type,System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation if it's not registered before.
+            </summary>
+            <param name="iocRegistrar">Registrar</param>
+            <param name="type">Type of the class</param>
+            <param name="impl">The type that implements <paramref name="type" /></param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+            <returns>
+            True, if registered for given implementation.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Extension.ListExtensions">
+            <summary>
+            Extension methods for <see cref="T:System.Collections.Generic.IList`1" />.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.ListExtensions.SortByDependencies``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Sort a list by a topological sorting, which consider their  dependencies
+            </summary>
+            <typeparam name="T">The type of the members of values.</typeparam>
+            <param name="source">A list of objects to sort</param>
+            <param name="getDependencies">Function to resolve the dependencies</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.ListExtensions.SortByDependenciesVisit``1(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}},System.Collections.Generic.List{``0},System.Collections.Generic.Dictionary{``0,System.Boolean})">
+            <summary>
+            Sorts the by dependencies visit.
+            </summary>
+            <typeparam name="T">The type of the members of values.</typeparam>
+            <param name="item">Item to resolve</param>
+            <param name="getDependencies">Function to resolve the dependencies</param>
+            <param name="sorted">List with the sortet items</param>
+            <param name="visited">Dictionary with the visited items</param>
+            <exception cref="T:System.ArgumentException">Cyclic dependency found! Item: " + item</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Extension.ObjectExtensions">
+            <summary>
+            Extension methods for all objects.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.ObjectExtensions.As``1(System.Object)">
+            <summary>
+            Used to simplify and beautify casting an object to a type.
+            </summary>
+            <typeparam name="T">Type to be casted</typeparam>
+            <param name="obj">Object to cast</param>
+            <returns>
+            Casted object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.ObjectExtensions.To``1(System.Object)">
+            <summary>
+            Converts given object to a value type using <see cref="M:System.Convert.ChangeType(System.Object,System.TypeCode)" /> method.
+            </summary>
+            <typeparam name="T">Type of the target object</typeparam>
+            <param name="obj">Object to be converted</param>
+            <returns>
+            Converted object
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.ObjectExtensions.IsIn``1(``0,``0[])">
+            <summary>
+            Check if an item is in a list.
+            </summary>
+            <typeparam name="T">Type of the items</typeparam>
+            <param name="item">Item to check</param>
+            <param name="list">List of items</param>
+            <returns>
+              <c>true</c> if the specified list is in; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Extension.TypeExtensions.GetDeclaredInterfaces(System.Type)">
+            <summary>
+            Gets the declared interfaces.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="F:iSIM.Core.Common.Health.ServerHealth._instance">
+            <summary>
+            The instance
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.AssemblyHelper.GetAllAssembliesInFolder(System.String,System.IO.SearchOption)">
+            <summary>
+            Gets all assemblies in folder.
+            </summary>
+            <param name="folderPath">The folder path.</param>
+            <param name="searchOption">The search option.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.Check.NotNull``1(``0,System.String)">
+            <summary>
+            Nots the null.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:iSIM.Core.Common.Helper.ConfigurationHelper.ConnectionString">
+            <summary>
+            ConnectionString Bilgisini Döndürür.
+            </summary>
+            <value>
+            The connection string.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Helper.ConfigurationHelper.CommandText">
+            <summary>
+            Gets the command text.
+            </summary>
+            <value>
+            The command text.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.Generator.GenerateUniqueId">
+            <summary>
+            Generates the unique identifier.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Helper.ReflectionHelper">
+            <summary>
+            Defines helper methods for reflection.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.IsAssignableToGenericType(System.Type,System.Type)">
+            <summary>
+            Checks whether <paramref name="givenType" /> implements/inherits <paramref name="genericType" />.
+            </summary>
+            <param name="givenType">Type to check</param>
+            <param name="genericType">Generic type</param>
+            <returns>
+              <c>true</c> if [is assignable to generic type] [the specified given type]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.GetAttributesOfMemberAndDeclaringType(System.Reflection.MemberInfo)">
+            <summary>
+            Gets a list of attributes defined for a class member and it's declaring type including inherited attributes.
+            </summary>
+            <param name="memberInfo">MemberInfo</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.GetAttributesOfMemberAndDeclaringType``1(System.Reflection.MemberInfo)">
+            <summary>
+            Gets a list of attributes defined for a class member and it's declaring type including inherited attributes.
+            </summary>
+            <typeparam name="TAttribute">Type of the attribute</typeparam>
+            <param name="memberInfo">MemberInfo</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.GetSingleAttributeOfMemberOrDeclaringTypeOrDefault``1(System.Reflection.MemberInfo,``0)">
+            <summary>
+            Tries to gets an of attribute defined for a class member and it's declaring type including inherited attributes.
+            Returns default value if it's not declared at all.
+            </summary>
+            <typeparam name="TAttribute">Type of the attribute</typeparam>
+            <param name="memberInfo">MemberInfo</param>
+            <param name="defaultValue">Default value (null as default)</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.GetSingleAttributeOrDefault``1(System.Reflection.MemberInfo,``0)">
+            <summary>
+            Tries to gets an of attribute defined for a class member and it's declaring type including inherited attributes.
+            Returns default value if it's not declared at all.
+            </summary>
+            <typeparam name="TAttribute">Type of the attribute</typeparam>
+            <param name="memberInfo">MemberInfo</param>
+            <param name="defaultValue">Default value (null as default)</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.GetValueByPath(System.Object,System.Type,System.String)">
+            <summary>
+            Gets value of a property by it's full path from given object
+            </summary>
+            <param name="obj">Object to get value from</param>
+            <param name="objectType">Type of given object</param>
+            <param name="propertyPath">Full path of property</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Helper.ReflectionHelper.SetValueByPath(System.Object,System.Type,System.String,System.Object)">
+            <summary>
+            Sets value of a property by it's full path on given object
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="objectType">Type of the object.</param>
+            <param name="propertyPath">The property path.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.BusinessLayer.IAsset">
+            <summary>
+            Base interface for the BusinessLayer Interfaces
+            All the BusinessLayer Interfaces should implement this interface
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.BusinessLayer.IBusinessLayer">
+            <summary>
+            Base interface for the BusinessLayer Interfaces
+            All the BusinessLayer Interfaces should implement this interface
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.BusinessLayer.IDeletable">
+            <summary>
+            Deletable Entities must implement this interface
+            If an entity has IsDeleted variable and also implements this interface, this entity will be deleted permanently.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig">
+            <summary>
+            Defines interface to use a dictionary to make configurations.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.Set``1(System.String,``0)">
+            <summary>
+            Used to set a string named configuration.
+            If there is already a configuration with same <paramref name="name" />, it's overwritten.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="value">Value of the configuration</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.Get(System.String)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <param name="name">Unique name of the configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.Get``1(System.String)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <typeparam name="T">Type of the object</typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.Get(System.String,System.Object)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <param name="name">Unique name of the configuration</param>
+            <param name="defaultValue">Default value of the object if can not found given configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.Get``1(System.String,``0)">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <typeparam name="T">Type of the object</typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="defaultValue">Default value of the object if can not found given configuration</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Configuration.IDictionaryBasedConfig.GetOrCreate``1(System.String,System.Func{``0})">
+            <summary>
+            Gets a configuration object with given name.
+            </summary>
+            <typeparam name="T">Type of the object</typeparam>
+            <param name="name">Unique name of the configuration</param>
+            <param name="creator">The function that will be called to create if given configuration is not found</param>
+            <returns>
+            Value of the configuration or null if not found
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar">
+            <summary>
+            This interface is used to register dependencies by conventions.
+            </summary>
+            <remarks>
+            Implement this interface and register to <see cref="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)" /> method to be able
+            to register classes by your own conventions.
+            </remarks>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar.RegisterAssembly(iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext)">
+            <summary>
+            Registers types of given assembly by convention.
+            </summary>
+            <param name="context">Registration context</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext">
+            <summary>
+            Used to pass needed objects on conventional registration process.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext.Assembly">
+            <summary>
+            Gets the registering Assembly.
+            </summary>
+            <value>
+            The assembly.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext.IocManager">
+            <summary>
+            Reference to the IOC Container to register types.
+            </summary>
+            <value>
+            The ioc manager.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Dependency.IConventionalRegistrationContext.Config">
+            <summary>
+            Registration configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IIocManager">
+            <summary>
+            This interface is used to directly perform dependency injection tasks.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Dependency.IIocRegistrar" />
+            <seealso cref="T:iSIM.Core.Common.Interface.Dependency.IIocResolver" />
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Dependency.IIocManager.IocContainer">
+            <summary>
+            Reference to the Castle Windsor Container.
+            </summary>
+            <value>
+            The ioc container.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocManager.IsRegistered(System.Type)">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <param name="type">Type to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocManager.IsRegistered``1">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <typeparam name="T">Type to check</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IIocRegistrar">
+            <summary>
+            Define interface for classes those are used to register dependencies.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)">
+            <summary>
+            Adds a dependency registrar for conventional registration.
+            </summary>
+            <param name="registrar">dependency registrar</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.RegisterAssemblyByConvention(System.Reflection.Assembly)">
+            <summary>
+            Registers types of given assembly by all conventional registrars. See <see cref="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)" /> method.
+            </summary>
+            <param name="assembly">Assembly to register</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.RegisterAssemblyByConvention(System.Reflection.Assembly,iSIM.Core.Common.Dependency.ConventionalRegistrationConfig)">
+            <summary>
+            Registers types of given assembly by all conventional registrars. See <see cref="M:iSIM.Core.Common.Dependency.IocManager.AddConventionalRegistrar(iSIM.Core.Common.Interface.Dependency.IConventionalDependencyRegistrar)" /> method.
+            </summary>
+            <param name="assembly">Assembly to register</param>
+            <param name="config">Additional configuration</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.Register``1(iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration.
+            </summary>
+            <typeparam name="T">Type of the class</typeparam>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.Register(System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type as self registration.
+            </summary>
+            <param name="type">Type of the class</param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.Register``2(iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation.
+            </summary>
+            <typeparam name="TType">Registering type</typeparam>
+            <typeparam name="TImpl">The type that implements <see cref="!:TType" /></typeparam>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.Register(System.Type,System.Type,iSIM.Core.Common.Enum.DependencyLifeStyle)">
+            <summary>
+            Registers a type with it's implementation.
+            </summary>
+            <param name="type">Type of the class</param>
+            <param name="impl">The type that implements <paramref name="type" /></param>
+            <param name="lifeStyle">Lifestyle of the objects of this type</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.IsRegistered(System.Type)">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <param name="type">Type to check</param>
+            <returns>
+              <c>true</c> if the specified type is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocRegistrar.IsRegistered``1">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <typeparam name="TType">Type to check</typeparam>
+            <returns>
+              <c>true</c> if this instance is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IIocResolver">
+            <summary>
+            Define interface for classes those are used to resolve dependencies.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Resolve``1">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to get</typeparam>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Resolve``1(System.Type)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to cast</typeparam>
+            <param name="type">Type of the object to resolve</param>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Resolve``1(System.Object)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the object to get</typeparam>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Resolve(System.Type)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the object to get</param>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Resolve(System.Type,System.Object)">
+            <summary>
+            Gets an object from IOC container.
+            Returning object must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the object to get</param>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            The object instance
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.ResolveAll``1">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the objects to resolve</typeparam>
+            <returns>
+            Object instances
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.ResolveAll``1(System.Object)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <typeparam name="T">Type of the objects to resolve</typeparam>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            Object instances
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.ResolveAll(System.Type)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the objects to resolve</param>
+            <returns>
+            Object instances
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.ResolveAll(System.Type,System.Object)">
+            <summary>
+            Gets all implementations for given type.
+            Returning objects must be Released (see <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" />) after usage.
+            </summary>
+            <param name="type">Type of the objects to resolve</param>
+            <param name="argumentsAsAnonymousType">Constructor arguments</param>
+            <returns>
+            Object instances
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)">
+            <summary>
+            Releases a pre-resolved object. See Resolve methods.
+            </summary>
+            <param name="obj">Object to be released</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.IsRegistered(System.Type)">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <param name="type">Type to check</param>
+            <returns>
+              <c>true</c> if the specified type is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.IsRegistered``1">
+            <summary>
+            Checks whether given type is registered before.
+            </summary>
+            <typeparam name="T">Type to check</typeparam>
+            <returns>
+              <c>true</c> if this instance is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.IIocScopedResolver">
+            <summary>
+            This interface is used to wrap a scope for batch resolvings in a single <c>using</c> statement.
+            It inherits <see cref="T:System.IDisposable" /> and <see cref="T:iSIM.Core.Common.Interface.Dependency.IIocResolver" />, so resolved objects can be easily and batch
+            manner released by IocResolver.
+            In <see cref="M:System.IDisposable.Dispose" /> method, <see cref="M:iSIM.Core.Common.Interface.Dependency.IIocResolver.Release(System.Object)" /> is called to dispose the object.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Dependency.IIocResolver" />
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.ISingletonDependency">
+            <summary>
+            All classes implement this interface are automatically registered to dependency injection as singleton object.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Dependency.ITransientDependency">
+            <summary>
+            All classes implement this interface are automatically registered to dependency injection as transient object.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.ToDto(`0)">
+            <summary>
+            To the dto.
+            </summary>
+            <param name="entityModel">The entity model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.ToEntity">
+            <summary>
+            To the entity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.Select">
+            <summary>
+            Selects this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.DtoBase`2.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.DtoBase`2.QueryLimit">
+            <summary>
+            Gets or sets the query limit.
+            </summary>
+            <value>
+            The query limit.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.op_Inequality(iSIM.Core.Common.Interface.DtoBase{`0,`1},iSIM.Core.Common.Interface.DtoBase{`0,`1})">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="lhs">The LHS.</param>
+            <param name="rhs">The RHS.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.DtoBase`2.op_Equality(iSIM.Core.Common.Interface.DtoBase{`0,`1},iSIM.Core.Common.Interface.DtoBase{`0,`1})">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="lhs">The LHS.</param>
+            <param name="rhs">The RHS.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.ManipulationDtoBase`2">
+            <summary>
+            Manipulation Dto Base
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <typeparam name="TDto">The type of the dto.</typeparam>
+            <seealso cref="T:iSIM.Core.Common.Interface.DtoBase`2" />
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.ManipulationDtoBase`2.IsExist">
+            <summary>
+            Determines whether this instance is exist.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IDto.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IDto.QueryLimit">
+            <summary>
+            Gets or sets the query limit.
+            </summary>
+            <value>
+            The query limit.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.IDto.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.Interceptor.IThrowable">
+            <summary>
+            IThrowable
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.IPaginatedDto`1">
+            <summary>
+            IPaginatedDto
+            </summary>
+            <typeparam name="TDto">The type of the dto.</typeparam>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.PageIndex">
+            <summary>
+            Gets or sets the index of the page.
+            </summary>
+            <value>
+            The index of the page.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+            <value>
+            The size of the page.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.TotalCount">
+            <summary>
+            Gets or sets the total count.
+            </summary>
+            <value>
+            The total count.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.TotalPageCount">
+            <summary>
+            Gets or sets the total page count.
+            </summary>
+            <value>
+            The total page count.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.HasNextPage">
+            <summary>
+            Gets or sets a value indicating whether this instance has next page.
+            </summary>
+            <value>
+              <c>true</c> if this instance has next page; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.HasPreviousPage">
+            <summary>
+            Gets or sets a value indicating whether this instance has previous page.
+            </summary>
+            <value>
+              <c>true</c> if this instance has previous page; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IPaginatedDto`1.Items">
+            <summary>
+            Gets the items.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.IValidator">
+            <summary>
+            IValidator
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.IValidator.IsValid">
+            <summary>
+            Returns true if ... is valid.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:iSIM.Core.Common.Interface.IEntity`1" -->
+        <member name="T:iSIM.Core.Common.Interface.INonDeletableEntity">
+            <summary>
+            INonDeletableEntity
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.IEntity" />
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.INonDeletableEntity.IsDeleted">
+            <summary>
+            pasif olsa bile yani false olsa bile uygulamada kullanici listesinde listelenebilir.
+            </summary>
+            <value>
+              <c>true</c> if this instance is deleted; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:iSIM.Core.Common.Interface.IAssetEntity`1" -->
+        <member name="P:iSIM.Core.Common.Interface.IAssetEntity`1.TblAsset">
+            <summary>
+            Gets or sets the table asset.
+            </summary>
+            <value>
+            The table asset.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.IAssetEntity">
+            <summary>
+            IAssetEntity
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.IAssetEntity" />
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.IActiveEntity">
+            <summary>
+            IActiveEntity
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.IEntity" />
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.IActiveEntity.IsActive">
+            <summary>
+            Gets or sets a value indicating whether this instance is active.
+            </summary>
+            <value>
+              <c>true</c> if this instance is active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Interface.IEntity">
+            <summary>
+            IEntity
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Modules.IIsimModuleManager.StartupModule">
+            <summary>
+            Gets the startup module.
+            </summary>
+            <value>
+            The startup module.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Modules.IIsimModuleManager.Modules">
+            <summary>
+            Gets the modules.
+            </summary>
+            <value>
+            The modules.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Modules.IIsimModuleManager.Initialize(System.Type)">
+            <summary>
+            Initializes the specified startup module.
+            </summary>
+            <param name="startupModule">The startup module.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Modules.IIsimModuleManager.StartModules">
+            <summary>
+            Starts the modules.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Modules.IIsimModuleManager.ShutdownModules">
+            <summary>
+            Shutdowns the modules.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Interface.Plugins.IIsimPluginManager.PluginSources">
+            <summary>
+            Gets the plugin sources.
+            </summary>
+            <value>
+            The plugin sources.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Interface.Plugins.IPluginSource.GetModules">
+            <summary>
+            Gets the modules.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.IsimKernelModule">
+            <summary>
+            Kernel (core) module of the Isim system.
+            No need to depend on this, it's automatically the first module always.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Modules.IsimModule" />
+        </member>
+        <member name="M:iSIM.Core.Common.IsimKernelModule.PreInitialize">
+            <summary>
+            This is the first event called on application startup.
+            Codes can be placed here to run before dependency injection registrations.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.IsimKernelModule.Initialize">
+            <summary>
+            This method is used to register dependencies for this module.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.IsimKernelModule.PostInitialize">
+            <summary>
+            This method is called lastly on application startup.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.IsimKernelModule.RegisterMissingComponents">
+            <summary>
+            Registers the missing components.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.IsimServerInMemoryModel">
+            <summary>
+            IsimServerInMemoryModel
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimServerInMemoryModel.IpAddress">
+            <summary>
+            Gets or sets the ip address.
+            </summary>
+            <value>
+            The ip address.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimServerInMemoryModel.DateTime">
+            <summary>
+            Gets or sets the date time.
+            </summary>
+            <value>
+            The date time.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimServerInMemoryModel.AsyncCount">
+            <summary>
+            Gets or sets the asynchronous count.
+            </summary>
+            <value>
+            The asynchronous count.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.PaginatedList`1">
+            <summary>
+            List object to represent the paginated collection.
+            </summary>
+            <typeparam name="T">Type of the Entity</typeparam>
+            <seealso cref="T:System.Collections.Generic.List`1" />
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.PageIndex">
+            <summary>
+            Gets the index of the page.
+            </summary>
+            <value>
+            The index of the page.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.PageSize">
+            <summary>
+            Gets the size of the page.
+            </summary>
+            <value>
+            The size of the page.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.TotalCount">
+            <summary>
+            Gets the total count.
+            </summary>
+            <value>
+            The total count.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.TotalPageCount">
+            <summary>
+            Gets the total page count.
+            </summary>
+            <value>
+            The total page count.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.HasPreviousPage">
+            <summary>
+            Gets a value indicating whether this instance has previous page.
+            </summary>
+            <value>
+              <c>true</c> if this instance has previous page; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.PaginatedList`1.HasNextPage">
+            <summary>
+            Gets a value indicating whether this instance has next page.
+            </summary>
+            <value>
+              <c>true</c> if this instance has next page; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.PaginatedList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Model.PaginatedList`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="pageIndex">Index of the page.</param>
+            <param name="pageSize">Size of the page.</param>
+            <param name="totalCount">The total count.</param>
+            <exception cref="T:System.ArgumentNullException">source</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.SessionClientBase">
+            <summary>
+            SessionClientBase
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionClientBase.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionClientBase.Uuid">
+            <summary>
+            Gets or sets the UUID.
+            </summary>
+            <value>
+            The UUID.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionClientBase.PcName">
+            <summary>
+            Gets or sets the name of the pc.
+            </summary>
+            <value>
+            The name of the pc.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.SessionUserBase">
+            <summary>
+            Session User Base
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUserBase.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUserBase.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>
+            The username.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUserBase.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>
+            The password.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUserBase.Client">
+            <summary>
+            Gets or sets the client.
+            </summary>
+            <value>
+            The client.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.SessionUser">
+            <summary>
+            Session User
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Model.SessionUserBase" />
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.LoginTime">
+            <summary>
+            Gets or sets the login time.
+            </summary>
+            <value>
+            The login time.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.ExpireTime">
+            <summary>
+            Gets or sets the expire time.
+            </summary>
+            <value>
+            The expire time.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.LastRefreshedTime">
+            <summary>
+            Gets or sets the last refreshed time.
+            </summary>
+            <value>
+            The last refreshed time.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.Priority">
+            <summary>
+            Gets or sets the priority.
+            </summary>
+            <value>
+            The priority.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.Roles">
+            <summary>
+            Gets or sets the roles.
+            </summary>
+            <value>
+            The roles.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.UserGroupsIds">
+            <summary>
+            Gets or sets the user groups ids.
+            </summary>
+            <value>
+            The user groups ids.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.ManagerUserGroupsIds">
+            <summary>
+            Gets or sets the manager user groups ids.
+            </summary>
+            <value>
+            The manager user groups ids.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.Firstname">
+            <summary>
+            Gets or sets the first name.
+            </summary>
+            <value>
+            The first name.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.Lastname">
+            <summary>
+            Gets or sets the last name.
+            </summary>
+            <value>
+            The last name.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.SessionUser.LoginType">
+            <summary>
+            Gets or sets the type of the login.
+            </summary>
+            <value>
+            The type of the login.
+            </value>
+        </member>
+        <member name="T:iSIM.Core.Common.Model.IsimResult">
+            <summary>
+            Isim Result
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.CreatedId">
+            <summary>
+            Gets or sets the created identifier.
+            </summary>
+            <value>
+            The created identifier.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.NumberOfRecordedData">
+            <summary>
+            Gets or sets the number of data.
+            </summary>
+            <value>
+            The number of data.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+            <value>
+            The status code.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.ExceptionMessages">
+            <summary>
+            Gets or sets the exception messages.
+            </summary>
+            <value>
+            The exception messages.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Model.IsimResult"/> class.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.Success">
+            <summary>
+            Successes this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.Success(System.String)">
+            <summary>
+            Successes the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="P:iSIM.Core.Common.Model.IsimResult.IsSuccess">
+            <summary>
+            Gets a value indicating whether this instance is success.
+            </summary>
+            <value>
+              <c>true</c> if this instance is success; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.op_Inequality(iSIM.Core.Common.Model.IsimResult,iSIM.Core.Common.Model.IsimResult)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="lhs">The LHS.</param>
+            <param name="rhs">The RHS.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult.op_Equality(iSIM.Core.Common.Model.IsimResult,iSIM.Core.Common.Model.IsimResult)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="lhs">The LHS.</param>
+            <param name="rhs">The RHS.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:iSIM.Core.Common.Model.IsimResult`1" -->
+        <member name="P:iSIM.Core.Common.Model.IsimResult`1.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Model.IsimResult`1.SetData(`0,iSIM.Core.Common.Enum.ResultStatusCode,System.String)">
+            <summary>
+            Sets the data.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="statusCode">The status code.</param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.DependsOnAttribute">
+            <summary>
+            Used to define dependencies of an iSIM module to other modules.
+            It should be used for a class derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.DependsOnAttribute.DependedModuleTypes">
+            <summary>
+            Types of depended modules.
+            </summary>
+            <value>
+            The depended module types.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.DependsOnAttribute.#ctor(System.Type[])">
+            <summary>
+            Used to define dependencies of an iSIM module to other modules.
+            </summary>
+            <param name="dependedModuleTypes">Types of depended modules</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.IsimBootstrapper">
+            <summary>
+            This is the main class that is responsible to start entire iSIM system.
+            Prepares dependency injection and registers core components needed for startup.
+            It must be instantiated and initialized (see <see cref="M:iSIM.Core.Common.Modules.IsimBootstrapper.Initialize" />) first in an application.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimBootstrapper.StartupModule">
+            <summary>
+            Get the startup module of the application which depends on other used modules.
+            </summary>
+            <value>
+            The startup module.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimBootstrapper.PluginSources">
+            <summary>
+            A list of plug in folders.
+            </summary>
+            <value>
+            The plugin sources.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimBootstrapper.IocManager">
+            <summary>
+            Gets IIocManager object used by this class.
+            </summary>
+            <value>
+            The ioc manager.
+            </value>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimBootstrapper.IsDisposed">
+            <summary>
+            Is this object disposed before?
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimBootstrapper._moduleManager">
+            <summary>
+            The module manager
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimBootstrapper._logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.#ctor(System.Type)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <param name="startupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.#ctor(System.Type,iSIM.Core.Common.Interface.Dependency.IIocManager)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <param name="startupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</param>
+            <param name="iocManager">IIocManager that is used to bootstrap the iSIM system</param>
+            <exception cref="T:System.ArgumentException">startupModule</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Create``1">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <typeparam name="TStartupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Create``1(iSIM.Core.Common.Interface.Dependency.IIocManager)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <typeparam name="TStartupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</typeparam>
+            <param name="iocManager">IIocManager that is used to bootstrap the iSIM system</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Create(System.Type)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <param name="startupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Create(System.Type,iSIM.Core.Common.Interface.Dependency.IIocManager)">
+            <summary>
+            Creates a new <see cref="T:iSIM.Core.Common.Modules.IsimBootstrapper" /> instance.
+            </summary>
+            <param name="startupModule">Startup module of the application which depends on other used modules. Should be derived from <see cref="T:iSIM.Core.Common.Modules.IsimModule" />.</param>
+            <param name="iocManager">IIocManager that is used to bootstrap the iSIM system</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Initialize">
+            <summary>
+            Initializes the iSIM system.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.ResolveLogger">
+            <summary>
+            Resolves the logger.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.RegisterBootstrapper">
+            <summary>
+            Registers the bootstrapper.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimBootstrapper.Dispose">
+            <summary>
+            Disposes the iSIM system.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimCoreInstaller.Install(Castle.Windsor.IWindsorContainer,Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore)">
+            <summary>
+            Performs the installation in the <see cref="T:Castle.Windsor.IWindsorContainer" />.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="store">The configuration store.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.IsimModule">
+            <summary>
+            This class must be implemented by all module definition classes.
+            </summary>
+            <remarks>
+            A module definition class is generally located in it's own assembly
+            and implements some action in module events on application startup and shutdown.
+            It also defines depended modules.
+            </remarks>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModule.IocManager">
+            <summary>
+            Gets a reference to the IOC manager.
+            </summary>
+            <value>
+            The ioc manager.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModule.Logger">
+            <summary>
+            Gets or sets the logger.
+            </summary>
+            <value>
+            The logger.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Modules.IsimModule"/> class.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.PreInitialize">
+            <summary>
+            This is the first event called on application startup.
+            Codes can be placed here to run before dependency injection registrations.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.Initialize">
+            <summary>
+            This method is used to register dependencies for this module.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.PostInitialize">
+            <summary>
+            This method is called lastly on application startup.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.Shutdown">
+            <summary>
+            This method is called when the application is being shutdown.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.GetAdditionalAssemblies">
+            <summary>
+            Gets the additional assemblies.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.IsIsimModule(System.Type)">
+            <summary>
+            Checks if given type is an Isim module class.
+            </summary>
+            <param name="type">Type to check</param>
+            <returns>
+              <c>true</c> if [is isim module] [the specified type]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.FindDependedModuleTypes(System.Type)">
+            <summary>
+            Finds direct depended modules of a module (excluding given module).
+            </summary>
+            <param name="moduleType">Type of the module.</param>
+            <returns></returns>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimInitializationException">This type is not an Isim module: " +
+                                                                  moduleType.AssemblyQualifiedName</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.FindDependedModuleTypesRecursivelyIncludingGivenModule(System.Type)">
+            <summary>
+            Finds the depended module types recursively including given module.
+            </summary>
+            <param name="moduleType">Type of the module.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModule.AddModuleAndDependenciesResursively(System.Collections.Generic.List{System.Type},System.Type)">
+            <summary>
+            Adds the module and dependencies resursively.
+            </summary>
+            <param name="modules">The modules.</param>
+            <param name="module">The module.</param>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimInitializationException">This type is not an Isim module: " + module.AssemblyQualifiedName</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.IsimModuleCollection">
+            <summary>
+            Used to store IsimModuleInfo objects as a dictionary.
+            </summary>
+            <seealso cref="!:System.Collections.Generic.List&lt;iSIM.Core.Common.Modules.IsimModuleInfo&gt;" />
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleCollection.StartupModuleType">
+            <summary>
+            Gets the type of the startup module.
+            </summary>
+            <value>
+            The type of the startup module.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Modules.IsimModuleCollection"/> class.
+            </summary>
+            <param name="startupModuleType">Type of the startup module.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.GetModule``1">
+            <summary>
+            Gets a reference to a module instance.
+            </summary>
+            <typeparam name="TModule">Module type</typeparam>
+            <returns>
+            Reference to the module instance
+            </returns>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimException">Can not find module for " + typeof (TModule).FullName</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.GetSortedModuleListByDependency">
+            <summary>
+            Sorts modules according to dependencies.
+            If module A depends on module B, A comes after B in the returned List.
+            </summary>
+            <returns>
+            Sorted list
+            </returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.EnsureKernelModuleToBeFirst(System.Collections.Generic.List{iSIM.Core.Common.Modules.IsimModuleInfo})">
+            <summary>
+            Ensures the kernel module to be first.
+            </summary>
+            <param name="modules">The modules.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.EnsureStartupModuleToBeLast(System.Collections.Generic.List{iSIM.Core.Common.Modules.IsimModuleInfo},System.Type)">
+            <summary>
+            Ensures the startup module to be last.
+            </summary>
+            <param name="modules">The modules.</param>
+            <param name="startupModuleType">Type of the startup module.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.EnsureKernelModuleToBeFirst">
+            <summary>
+            Ensures the kernel module to be first.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleCollection.EnsureStartupModuleToBeLast">
+            <summary>
+            Ensures the startup module to be last.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.IsimModuleInfo">
+            <summary>
+            Used to store all needed information for a module.
+            </summary>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleInfo.Assembly">
+            <summary>
+            The assembly which contains the module definition.
+            </summary>
+            <value>
+            The assembly.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleInfo.Type">
+            <summary>
+            Type of the module.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleInfo.Instance">
+            <summary>
+            Instance of the module.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleInfo.Dependencies">
+            <summary>
+            All dependent modules of this module.
+            </summary>
+            <value>
+            The dependencies.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleInfo.#ctor(System.Type,iSIM.Core.Common.Modules.IsimModule)">
+            <summary>
+            Creates a new IsimModuleInfo object.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="instance">The instance.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleInfo.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Modules.IsimModuleManager">
+            <summary>
+            This class is used to manage modules.
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Modules.IIsimModuleManager" />
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleManager.StartupModule">
+            <summary>
+            Gets the startup module.
+            </summary>
+            <value>
+            The startup module.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleManager.Modules">
+            <summary>
+            Gets the modules.
+            </summary>
+            <value>
+            The modules.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Modules.IsimModuleManager.Logger">
+            <summary>
+            Gets or sets the logger.
+            </summary>
+            <value>
+            The logger.
+            </value>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimModuleManager._modules">
+            <summary>
+            The modules
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimModuleManager._iocManager">
+            <summary>
+            The ioc manager
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Modules.IsimModuleManager._isimPluginManager">
+            <summary>
+            The isim plugin manager
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.#ctor(iSIM.Core.Common.Interface.Dependency.IIocManager,iSIM.Core.Common.Interface.Plugins.IIsimPluginManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Modules.IsimModuleManager"/> class.
+            </summary>
+            <param name="iocManager">The ioc manager.</param>
+            <param name="isimPluginManager">The isim plugin manager.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.Initialize(System.Type)">
+            <summary>
+            Initializes the specified startup module.
+            </summary>
+            <param name="startupModule">The startup module.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.StartModules">
+            <summary>
+            Starts the modules.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.ShutdownModules">
+            <summary>
+            Shutdowns the modules.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.LoadAllModules">
+            <summary>
+            Loads all modules.
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.FindAllModules">
+            <summary>
+            Finds all modules.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.CreateModules(System.Collections.Generic.ICollection{System.Type})">
+            <summary>
+            Creates the modules.
+            </summary>
+            <param name="moduleTypes">The module types.</param>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimInitializationException">This type is not an iSIM module: " +
+                                                                      moduleType.AssemblyQualifiedName</exception>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.RegisterModules(System.Collections.Generic.ICollection{System.Type})">
+            <summary>
+            Registers the modules.
+            </summary>
+            <param name="moduleTypes">The module types.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Modules.IsimModuleManager.SetDependencies">
+            <summary>
+            Sets the dependencies.
+            </summary>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimInitializationException">Could not find a depended module " +
+                                                                          dependedModuleType.AssemblyQualifiedName + " for " +
+                                                                          moduleInfo.Type.AssemblyQualifiedName</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.FolderPluginSource">
+            <summary>
+            FolderPluginSource
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Plugins.IPluginSource" />
+        </member>
+        <member name="P:iSIM.Core.Common.Plugins.FolderPluginSource.Folder">
+            <summary>
+            Gets the folder.
+            </summary>
+            <value>
+            The folder.
+            </value>
+        </member>
+        <member name="P:iSIM.Core.Common.Plugins.FolderPluginSource.SearchOption">
+            <summary>
+            Gets or sets the search option.
+            </summary>
+            <value>
+            The search option.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.FolderPluginSource.#ctor(System.String,System.IO.SearchOption)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Plugins.FolderPluginSource"/> class.
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="searchOption">The search option.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.FolderPluginSource.GetModules">
+            <summary>
+            Gets the modules.
+            </summary>
+            <returns></returns>
+            <exception cref="T:iSIM.Core.Common.Exception.IsimInitializationException">Could not get module types from assembly: " + assembly.FullName</exception>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.IsimPluginManager">
+            <summary>
+            IsimPluginManager
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Plugins.IIsimPluginManager" />
+        </member>
+        <member name="P:iSIM.Core.Common.Plugins.IsimPluginManager.PluginSources">
+            <summary>
+            Gets the plugin sources.
+            </summary>
+            <value>
+            The plugin sources.
+            </value>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.IsimPluginManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Plugins.IsimPluginManager"/> class.
+            </summary>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.PluginSourceExtensions">
+            <summary>
+            PluginSourceExtensions
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginSourceExtensions.GetModulesWithAllDependencies(iSIM.Core.Common.Interface.Plugins.IPluginSource)">
+            <summary>
+            Gets the modules with all dependencies.
+            </summary>
+            <param name="plugInSource">The plug in source.</param>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.PluginSourceList">
+            <summary>
+            PluginSourceList
+            </summary>
+            <seealso cref="!:System.Collections.Generic.List&lt;iSIM.Core.Common.Interface.Plugins.IPluginSource&gt;" />
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginSourceList.GetAllModules">
+            <summary>
+            Gets all modules.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.PluginSourceListExtensions">
+            <summary>
+            PluginSourceListExtensions
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginSourceListExtensions.AddFolder(iSIM.Core.Common.Plugins.PluginSourceList,System.String,System.IO.SearchOption)">
+            <summary>
+            Adds the folder.
+            </summary>
+            <param name="list">The list.</param>
+            <param name="folder">The folder.</param>
+            <param name="searchOption">The search option.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginSourceListExtensions.AddTypeList(iSIM.Core.Common.Plugins.PluginSourceList,System.Type[])">
+            <summary>
+            Adds the type list.
+            </summary>
+            <param name="list">The list.</param>
+            <param name="moduleTypes">The module types.</param>
+        </member>
+        <member name="T:iSIM.Core.Common.Plugins.PluginTypeListSource">
+            <summary>
+            PluginTypeListSource
+            </summary>
+            <seealso cref="T:iSIM.Core.Common.Interface.Plugins.IPluginSource" />
+        </member>
+        <member name="F:iSIM.Core.Common.Plugins.PluginTypeListSource._moduleTypes">
+            <summary>
+            The module types
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginTypeListSource.#ctor(System.Type[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:iSIM.Core.Common.Plugins.PluginTypeListSource"/> class.
+            </summary>
+            <param name="moduleTypes">The module types.</param>
+        </member>
+        <member name="M:iSIM.Core.Common.Plugins.PluginTypeListSource.GetModules">
+            <summary>
+            Gets the modules.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Security.IsimCrypto">
+            <summary>
+            IsimCrypto
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.IsimCrypto.Encrypt(System.String)">
+            <summary>
+            Encrypts the specified plain text.
+            </summary>
+            <param name="plainText">The plain text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.IsimCrypto.Decrypt(System.String)">
+            <summary>
+            Decrypts the specified cipher text.
+            </summary>
+            <param name="cipherText">The cipher text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.IsimCrypto.MakeMd5(System.String)">
+            <summary>
+            Makes the MD5.
+            </summary>
+            <param name="input">The input.</param>
+            <returns></returns>
+        </member>
+        <member name="T:iSIM.Core.Common.Security.StringCipher">
+            <summary>
+            StringCipher
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Security.StringCipher.Keysize">
+            <summary>
+            The keysize
+            </summary>
+        </member>
+        <member name="F:iSIM.Core.Common.Security.StringCipher.DerivationIterations">
+            <summary>
+            The derivation iterations
+            </summary>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.StringCipher.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts the specified plain text.
+            </summary>
+            <param name="plainText">The plain text.</param>
+            <param name="passPhrase">The pass phrase.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.StringCipher.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts the specified cipher text.
+            </summary>
+            <param name="cipherText">The cipher text.</param>
+            <param name="passPhrase">The pass phrase.</param>
+            <returns></returns>
+        </member>
+        <member name="M:iSIM.Core.Common.Security.StringCipher.Generate256BitsOfRandomEntropy">
+            <summary>
+            Generate256s the bits of random entropy.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.ExceptionExt.GetAllMessages(System.Exception)">
+            <summary>
+            Gets all messages.
+            </summary>
+            <param name="exception">The exception.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.GlobalExt.FromHierarchy``1(``0,System.Func{``0,``0},System.Func{``0,System.Boolean})">
+            <summary>
+            Froms the hierarchy.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="nextItem">The next item.</param>
+            <param name="canContinue">The can continue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.GlobalExt.FromHierarchy``1(``0,System.Func{``0,``0})">
+            <summary>
+            Froms the hierarchy.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="nextItem">The next item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.GlobalExt.Equalizer``1(``0,``0)">
+            <summary>
+            Equalizers the specified source.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="curr">The curr.</param>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:System.GlobalExt.GetValue(System.Object,System.String)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="curr">The curr.</param>
+            <param name="attributeName">Name of the attribute.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.GlobalExt.SetValue(System.Object,System.String,System.Object)">
+            <summary>
+            Sets the value.
+            </summary>
+            <param name="curr">The curr.</param>
+            <param name="attributeName">Name of the attribute.</param>
+            <param name="newValue">The new value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.QueryableExtensions.ToPaginatedList``1(System.Linq.IQueryable{``0},System.Int32,System.Int32)">
+            <summary>
+            To the paginated list.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query">The query.</param>
+            <param name="pageIndex">Index of the page.</param>
+            <param name="pageSize">Size of the page.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelper.ToJson(System.Object,System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelper.TryToJson(System.Object)">
+            <summary>
+            Tries to json.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelper.FromJson``1(System.String)">
+            <summary>
+            Froms the json.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelper.TryFromJson``1(System.String)">
+            <summary>
+            Tries from json.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelperExt.ToJson(System.Object,System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="useCamelCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonHelperExt.FromJson``1(System.String)">
+            <summary>
+            Froms the json.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

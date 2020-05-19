@@ -66,10 +66,10 @@
       <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
     <Reference Include="iSIM.Core.Common">
-      <HintPath>..\..\..\..\Desktop\iSIMAssetTool\iSIMAssetTool\bin\x64\Debug\iSIM.Core.Common.dll</HintPath>
+      <HintPath>..\packages\CoreCommon\iSIM.Core.Common.dll</HintPath>
     </Reference>
     <Reference Include="iSIM.Core.Entity">
-      <HintPath>..\..\..\..\Desktop\iSIMAssetTool\iSIMAssetTool\bin\x64\Debug\iSIM.Core.Entity.dll</HintPath>
+      <HintPath>..\packages\CoreEntity\iSIM.Core.Entity.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
