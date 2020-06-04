@@ -38,7 +38,7 @@ namespace AdministrationTool.Rest
         /// <summary>
         /// Timespan for rest client timeout
         /// </summary>
-        private static TimeSpan _restTimeoutTimeSpan = TimeSpan.FromSeconds(10);
+        private static TimeSpan _restTimeoutTimeSpan = TimeSpan.FromMinutes(2);
 
         /// <summary>
         /// The client
@@ -109,16 +109,25 @@ namespace AdministrationTool.Rest
         /// </summary>
         /// <returns></returns>
         /// 
-        public async Task<List<UnifiedAssetDto>> GetAssetListAsync()
+        public async Task<List<UnifiedAssetDto>> GetAssetListByUserIdAsync(long userId)
         {
             List<UnifiedAssetDto> assets = new List<UnifiedAssetDto>();
-            string uri = string.Format("{0}?token={1}", "Asset/Unified/Type/9/", IsimConstant.IsimInternalCommunicationTokenId);
-            var response = await _client.GetAsync(WebUtility.UrlDecode(uri)).Result.Content.ReadAsStringAsync();
-            IsimResult<List<UnifiedAssetDto>> requestAssetResult = JsonConvert.DeserializeObject<IsimResult<List<UnifiedAssetDto>>>(response);
-            if (requestAssetResult.IsSuccess)
+            try
             {
-                assets.AddRange(requestAssetResult.Data);
+               
+                string uri = string.Format("{0}{1}?token={2}", "Asset/Unified/User/",userId, IsimConstant.IsimInternalCommunicationTokenId);
+                var response = await _client.GetAsync(WebUtility.UrlDecode(uri)).Result.Content.ReadAsStringAsync();
+                IsimResult<List<UnifiedAssetDto>> requestAssetResult = JsonConvert.DeserializeObject<IsimResult<List<UnifiedAssetDto>>>(response);
+                if (requestAssetResult.IsSuccess)
+                {
+                    assets.AddRange(requestAssetResult.Data);
+                }
             }
+            catch (Exception ex)
+            {
+                
+            }
+
             return assets;
         }
 

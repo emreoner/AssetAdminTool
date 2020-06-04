@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnlAsset = new System.Windows.Forms.Panel();
             this.exportFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnExport
@@ -67,7 +68,7 @@
             this.txtRestAddress.Name = "txtRestAddress";
             this.txtRestAddress.Size = new System.Drawing.Size(305, 20);
             this.txtRestAddress.TabIndex = 15;
-            this.txtRestAddress.Text = "http://192.168.0.180/isim/api/";
+            this.txtRestAddress.Text = "http://10.241.19.18/isim/api/";
             // 
             // label3
             // 
@@ -116,20 +117,29 @@
             // pnlAsset
             // 
             this.pnlAsset.BackColor = System.Drawing.Color.Maroon;
-            this.pnlAsset.Location = new System.Drawing.Point(442, 12);
+            this.pnlAsset.Location = new System.Drawing.Point(442, 36);
             this.pnlAsset.Name = "pnlAsset";
-            this.pnlAsset.Size = new System.Drawing.Size(390, 442);
+            this.pnlAsset.Size = new System.Drawing.Size(390, 418);
             this.pnlAsset.TabIndex = 18;
             // 
             // exportFileDialog
             // 
             this.exportFileDialog.FileName = "openFileDialog1";
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(439, 12);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblStatus.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(844, 466);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.pnlAsset);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnLogin);
@@ -160,6 +170,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlAsset;
         private System.Windows.Forms.OpenFileDialog exportFileDialog;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

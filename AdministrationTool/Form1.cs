@@ -35,6 +35,8 @@ namespace AdministrationTool
 
         private RadTreeView RtvCameras { get; set; }
 
+        SessionUser user = null;
+
         UnifiedAssetTreeItem parentTreeItem;
 
         private static readonly object _rtvCamerasLockObject = new object();
@@ -122,7 +124,7 @@ namespace AdministrationTool
                         }
                         AuthorizationHelper.Client = resultClient;
                         IsimResult<SessionUser> userResult = null;
-                        SessionUser user = null;
+                        
 
                         userResult = await IsimRestClient.Instance.Login(txtUserName.Text, txtPassword.Text);
                         user = userResult.Data;
@@ -188,6 +190,9 @@ namespace AdministrationTool
         {
             try
             {
+
+                lblStatus.Text = "Loading Asset Lists...";
+
                 //_loadingPanel.Visible = true;
 
                 //await Task.Factory.StartNew(async () =>
@@ -199,7 +204,7 @@ namespace AdministrationTool
                 //}
                 // Load assets
                 //todo burada binding değişince sürekli db ye gitme engellenecek
-                _assetList = await IsimRestClient.Instance.GetAssetListAsync();
+                _assetList = await IsimRestClient.Instance.GetAssetListByUserIdAsync(user.UserId);
                 if (_assetList == null || _assetList.Count == 0)
                 {
                     Log.Error("camera list : assetlist is null");
@@ -221,9 +226,9 @@ namespace AdministrationTool
                         RtvCameras.EndEdit();
                     });
                 }
-
+                lblStatus.Text = "Asset List Loaded Converting to DataTable...";
                 dataTable = convertTreeViewToDataSet();
-
+                lblStatus.Text = "Finished...";
                 // convertToExcel(dataTable);
                 //});
             }
